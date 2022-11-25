@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        div{
+            width:150px;
+            height: 150px;
+            font-size: xx-large;
+            font-weight: bold;
+            background-color: aqua;
+            border: 1px solid gray;
+        }
+        div.static{
+            position: static;
+        }
+        div.relative{
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        div.fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        div.absoute{
+            position: absolute;
+            top: 100px;
+            right: 0;
+        }
+        p{
+            font-size: xx-large;
+            font-weight: bold;
+            color: black;
+        }
+        p.sticky{
+            position: static;
+            top: 0;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">static</div>
+    <div class="relative">relative</div>
+    <div class="fixed">fixed</div>
+    <div class="absoute">absoute</div>
+    <br>
+    <p class="sticky">sticky</p>
+    <p>position Example</p>
+    <p>position Example</p>
+    <p>position Example</p>
+    <p>position Example</p>
+    <p>position Example</p>
+
+    <p>position Example</p>
+    <p>position Example</p>
+</body>
+</html>
