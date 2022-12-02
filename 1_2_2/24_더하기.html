@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더하기</title>
+</head>
+<body>
+    <script>
+        var num;
+        var num_2;
+        var num_3=0;
+        var ct= prompt("문자의 길이만큼 합").length;
+        for(num=1;num<=ct;num++){
+            document.write(num);
+            if(num>=ct){
+                num_2="="
+                document.write(num_2);
+            }
+            else{
+                num_2="+"
+                document.write(num_2);
+            }
+            num_3+=num;
+        }
+        document.write(num_3);
+    </script>
+</body>
+</html>

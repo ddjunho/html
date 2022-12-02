@@ -1,0 +1,15 @@
+<script>
+    var text;
+    var week=new Date().getDay();
+    switch(week){
+        case 0:
+            text="js";
+        case 1:text="html";
+        case 2:text = "보안";
+        case 3:text = "운영체제";
+        case 4:text = "자료구조";
+        case 5:text = "파이썬";
+        case 6:text = "c#";
+    }
+    document.write("오늘은 <b>" + text + "</b> 학습하는 날입니다. <p/>");
+</script>
