@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+</head>
+<body>
+    <script>
+    <!-- 구구단 배열 생성 및 초기화하기 -->
+    var table=new Array(9);
+    for(var i=0; i<table.length; i++) {
+        table[i]=new Array(9); // 각 행에는 열 개의 열이 있다.
+    }
+    for(var row=0; row<table.length; row++) {
+        for(col=0; col<table[row].length; col++) {
+            table[row][col]=(row+1)*(col+1);
+        }
+    }   
+    // 구구단표 출력하기
+    var x;
+    var y;
+    document.write("<table border=1>");
+    for(x=1; x<=9; x++){
+        document.write("<td><b>" + x + "단" + "</b></td>");
+    }
+    for(x=1; x<=9; x++) {
+        document.write("<tr>");
+        for(y=1; y<=9; y++) {
+            document.write("<td>" + y + "*" + x + "=" + table[x-1][y-1] + " </td>");
+        }
+    document.write("</tr>");
+    }
+    document.write("</table>");
+    function printData() {
+        for(var x=0; x<table.length; x++) {
+            for(var y=0; y<table[x].length; y++){
+                document.write(table[x][y] + " ");
+            }
+        document.write("<br/>");
+        }
+        document.write("</p><a href='multiplication table.html'>돌아가기</a>");
+    }
+</script>
+</p>
+<button type="button" onclick="printData()">구구단 배열 데이터 보기</button>
+</body>
+</html>
