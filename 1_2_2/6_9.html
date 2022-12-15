@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5스타일 시트</title>
+    <style>
+        #main div{background: aqua;}
+        #main > p{background: maroon; color: aliceblue;}
+        ul{background: green;}
+        li.id+li{color: rgb(255, 127, 217); font-weight: bold;}
+        ul~h2{color: blue; font-weight: bold;}
+        .class, .id{font-size: 20px; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div id="main">Div 요소의 아이디 
+    <p>선택자_1</p>
+    <div>아이디 #main하위의 div요소1</div>
+    <ul>
+        <li class="class">클래스 선택자</li>
+        <li class="id">아이디 선택자</li>
+        <li class="attribute">속성 선택자</li>
+    </ul>
+    <p>선택자_2</p>
+    <h2>선택자_3</h2>
+</div>
+</body>
+</html>
